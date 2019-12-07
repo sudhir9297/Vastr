@@ -14,19 +14,34 @@
       width: 150px;
       padding: 10px;
       margin-left: 7px;
-      
+
       .logo{
         width:90%;
         height: 90%;
       }
     }
 
-    .options {
+    .right-options {
       width: 50%;
       height: 100%;
       display: flex;
       align-items: center;
       justify-content: flex-end;
+      margin-right: 15px;
+      
+      .option {
+        padding: 10px 20px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+
+    .left-options {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
       margin-right: 15px;
       
       .option {

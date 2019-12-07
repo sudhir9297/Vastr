@@ -17,21 +17,26 @@ import {selectCurrentUser} from '../../redux/user/user.selector';
 const Header=({currentUser,hidden})=>(
 <div className='header'>
     <Link className='logo-container' to="/">
-        <Logo className='logo'/>
-    </Link>
-    <div className='options'>
+            <Logo className='logo'/>
+    </Link>  
+    <div className="left-options">
         <Link className='option' to='/shop'>
             SHOP
+        </Link> 
+        <Link className='option' to='/accessories'>
+            ACCESSORIES
+        </Link> 
+        <Link className='option' to='/about'>
+            ABOUT
         </Link>
-        <Link className='option' to='/shop'>
-            CONTACT
-        </Link>
+    </div>
+    <div className='right-options'>
         {
             currentUser ?
             <div className='option' onClick={()=>auth.signOut()}>SIGN OUT</div>
             :
             <Link className='option' to='/signin'>
-            SIGN IN
+                SIGN IN
             </Link>
         }
         <CartIcon/>
