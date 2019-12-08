@@ -2,6 +2,26 @@ import React from 'react'
 import './footer.styles.scss'
 
 const Footer=()=>{
+
+    const logo=[
+        {
+            src:
+            require('../../assets/images/fb.png')
+        },
+        {
+            src:
+            require('../../assets/images/insta.png')
+        },
+        {
+            src:
+            require('../../assets/images/twi.png')
+        },
+        {
+            src:
+            require('../../assets/images/yt.png')
+        },
+        
+    ]
      const contacts=[
          { 
             id:0,
@@ -59,7 +79,9 @@ const Footer=()=>{
                 </div>
             </div>
             <div className="contact-2">
-
+            {
+                logo.map((item)=><div className="logo-container"><img src={item.src} /></div>)    
+            }
             </div>
         </div>
     )
