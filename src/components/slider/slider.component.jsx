@@ -26,15 +26,15 @@ const Slider =()=>{
     const images=[
         {
             src:
-            require('../../assets/images/q.jpg')
+            require('../../assets/images/slide1.jpg')
         },
         {
             src:
-            require('../../assets/images/1.jpeg')
+            require('../../assets/images/slide2.jpeg')
         },
         {
             src:
-            require('../../assets/images/r.jpg')
+            require('../../assets/images/slide3.jpg')
         },
         
     ]
