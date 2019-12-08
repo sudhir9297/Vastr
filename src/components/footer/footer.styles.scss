@@ -1,0 +1,40 @@
+.footer-container{
+    width: 100%;
+    height: 100%;
+    margin-top:15px;
+    padding: 25px;
+    box-shadow: 0px -2px 2px grey;
+    background-color: white;
+
+    .contact-1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .contact-Item-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: safe;
+
+            .type{
+                font-weight: 800;
+                margin: 5px;
+                width: 250px;
+            }
+            .value{
+                opacity: 0.6;
+                margin: 5px;
+                width: 100%;
+            }
+        }
+
+    }
+
+    .contact-2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+     
+}
