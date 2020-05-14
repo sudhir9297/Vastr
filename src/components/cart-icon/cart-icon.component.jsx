@@ -9,7 +9,7 @@ import {createStructuredSelector} from 'reselect';
 
 const CartIcon=({toggleCartHidden,itemCount})=>(
     <CartIconContainer  onClick={toggleCartHidden}>
-        <BsBag size="25px"/>
+        <BsBag size="22px"/>
         <ItemCount>{itemCount}</ItemCount>
     </CartIconContainer>
 

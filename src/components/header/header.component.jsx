@@ -44,7 +44,7 @@ const Header = ({ currentUser, hidden }) => (
                     <div className='option' onClick={() => auth.signOut()}>SIGN OUT</div>
                     :
                     <Options to='/signin'>
-                        <FaRegUser size="22px" />
+                        <FaRegUser size="20px" />
                     </Options>
             }
             <CartIcon />
@@ -61,7 +61,7 @@ const mapStatetoProps = createStructuredSelector({
 export default connect(mapStatetoProps)(Header);
 
 const HeaderContainer = styled.div`
-    height: 55px;
+    height: 50px;
     width: 100%;
     font-size:14px;
     color: #838280;
@@ -112,8 +112,8 @@ const LogoContainer = styled(Link)`
       display:flex;
       align-items:center;
       justify-content:center;
-      /* font-family: 'Petit Formal Script', cursive; */
-      font-family: 'Poiret One', cursive;
+      font-family: 'Petit Formal Script', cursive;
+      /* font-family: 'Poiret One', cursive; */
       font-size:35px;
       color:#A2C232;
       font-weight:400;
