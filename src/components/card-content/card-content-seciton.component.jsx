@@ -32,6 +32,7 @@ const ContentContainer = styled.div`
     display:flex;
     justify-content:space-around;
     align-items:center;
+    
 `
 
 const Bar = styled.span`

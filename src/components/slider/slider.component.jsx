@@ -1,59 +1,46 @@
 import React from 'react'
-import { Gallery, GalleryImage } from "react-gesture-gallery";
+import styled from 'styled-components'
 
-import '../slider/slider.styles.scss'
-
+import Carousel, { Dots } from '@brainhubeu/react-carousel';
+import '@brainhubeu/react-carousel/lib/style.css';
 //Lets be Clear here I still dont know how HOOKs works I just followed a guide to build this .... as per other stuff its easy and fun.
 
 const Slider = () => {
-  const [index, setIndex] = React.useState(0);
 
-  //I dont even know how useEffect work underthe hood I followed a Tutorial
-  React.useEffect(() => {
-    const timer = setInterval(() => {
-      //as we have only 3 images in slider so we are comparing with index 2
-      if (index === 2) {
-        setIndex(0); //setting the state of index to 0 if its the end
-      } else {
-        setIndex(prev => prev + 1);
-      }
-    }, 3000);
-
-    return () => clearInterval(timer);
-  }, [index]);
-
- // list of images and in return we are just mapping through them 
-  const images=[
-      {
-          src:
-          require('../../assets/images/slide1.jpg')
-      },
-      {
-          src:
-          require('../../assets/images/slide2.jpg')
-      },
-      {
-          src:
-          require('../../assets/images/slide3.jpg')
-      },
+  const images = [
+    {
+      id:1,
+      src:
+        require('../../assets/images/2.jpg')
+    },
+    {
+      id:2,
+      src:
+        require('../../assets/images/3.jpg')
+    },
+    {
+      id:3,
+      src:
+        require('../../assets/images/4.jpg')
+    },
 
   ]
   return (
-    <div className="slider-container">
-      <Gallery
-        index={index}
-        onRequestChange={i => {
-          setIndex(i);
-        }}
-      >
-        {images.map(img => (
-          <div className="images"><GalleryImage objectFit="contain" key={img.src} src={img.src} /></div>
-        ))}
-      </Gallery>
-    </div>
+    <Carousel autoPlay={3000}
+      animationSpeed={1000} infinite>
+      {
+        images.map((img) => <SliderItem key={img.id} src={img.src} />)
+      }
+    </Carousel>
   )
 }
 
 export default Slider;
 
 
+const SliderItem = styled.img`
+    width:100vw;
+    height:100vh;
+    object-fit:cover;
+    /* z-index:1; */
+`
