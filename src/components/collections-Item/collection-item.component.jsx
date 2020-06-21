@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FaFacebookF,FaInstagram,FaTwitter } from "react-icons/fa";
-import CardContent from '../card-content/card-content.component'
-
 
 const CollectionItem = ({item}) => {
     const {name,price,imageUrl}=item;

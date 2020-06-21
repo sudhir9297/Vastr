@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components'
 
-import CardContentSection from '../../components/card-content/card-content-seciton.component'
-import SliderPreview from '../../components/sliderPreview/sliderPreview.component'
+import CardContentSection from './Sections/card-content/card-content-seciton.component'
+import SliderPreview from './Sections/sliderPreview/sliderPreview.component'
 import Slider from '../../components/slider/slider.component'
-import NewArrival from '../../components/Sections/NewArrival.component'
-import Astetics from '../../components/Sections/Astetics.component'
-import Sales from '../../components/Sections/Sales.component'
+import NewArrival from './Sections/NewArrival.component'
+import Astetics from './Sections/Astetics.component'
+import Sales from './Sections/Sales.component'
+import FeaturedSection from './Sections/Featured.component'
 
 import SectionTitle from '../../components/section-title/section-title.component'
 import { BsChevronDoubleRight } from "react-icons/bs";
@@ -20,6 +21,7 @@ const Homepage = () => (
         <NewArrival />
         <Astetics />
         <Sales/>
+        <FeaturedSection/>
     </HomepageContainer>
 );
 

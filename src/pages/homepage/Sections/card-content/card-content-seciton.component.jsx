@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FaFacebookF,FaInstagram,FaTwitter } from "react-icons/fa";
-import CardContent from '../card-content/card-content.component'
+import CardContent from './card-content.component'
 
 
 const CardContentSection = (props) => {

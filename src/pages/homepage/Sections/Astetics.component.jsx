@@ -5,13 +5,13 @@ const NewArrival = () => (
     <Astetics>
         <FakeBackground />
         <Container1>
-            <img src={require('../../assets/images/1.jpg')} />
+            <img src={require('../../../assets/images/1.jpg')} />
             <div>
                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
         </div>
         </Container1>
         <Container2>
-            <img src={require('../../assets/images/21.jpg')} alt="just image" />
+            <img src={require('../../../assets/images/21.jpg')} alt="just image" />
         </Container2>
     </Astetics>
 );

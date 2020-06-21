@@ -1,16 +1,16 @@
 import React from 'react';
 import styled from 'styled-components'
-import SectionTitle from '../section-title/section-title.component'
+import SectionTitle from '../../../components/section-title/section-title.component'
 import { BsChevronDoubleRight } from "react-icons/bs";
 
 
 const NewArrival = () => (
     <NewArrivalContainer>
         <SecImageCont>
-            <ImgItem src={require("../../assets/images/5.jpg")} />
+            <ImgItem src={require("../../../assets/images/5.jpg")} />
             <ImageCont2>
-                <img src={require("../../assets/images/8.png")} />
-                <img src={require("../../assets/images/7.png")} />
+                <img src={require("../../../assets/images/8.png")} />
+                <img src={require("../../../assets/images/7.png")} />
             </ImageCont2>
         </SecImageCont>
         <SecDataCont>

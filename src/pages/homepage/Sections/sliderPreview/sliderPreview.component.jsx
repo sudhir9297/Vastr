@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import CollectionPreview from '../../components/collections-Item/collection_preview.component'
-import SectionTitle from '../../components/section-title/section-title.component'
+import CollectionPreview from '../../../../components/collections-Item/collection_preview.component'
+import SectionTitle from '../../../../components/section-title/section-title.component'
 
 const SliderPreview = () => {
 

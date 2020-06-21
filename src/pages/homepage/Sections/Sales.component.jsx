@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 const Sales = () => (
     <SalesContainer>
-        <ImageContainer src={require("../../assets/images/13.jpg")} alt="asd" />
-        <ImageContainer src={require("../../assets/images/1.jpg")} alt="asd" />
+        <ImageContainer src={require("../../../assets/images/13.jpg")} alt="asd" />
+        <ImageContainer src={require("../../../assets/images/1.jpg")} alt="asd" />
         <Banner>
             <SalesTitle>
                 SALES
