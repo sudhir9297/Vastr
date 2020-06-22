@@ -38,7 +38,7 @@ export default FeaturedSection;
 const FeaturedSectionContainer = styled.div`
   width: 100vw;
   height: auto;
-  margin-top: 80px;
+  margin: 60px 0;
 `;
 
 const ImageContainer = styled.div`
