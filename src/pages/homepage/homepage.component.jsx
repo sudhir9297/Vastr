@@ -9,6 +9,7 @@ import Astetics from './Sections/Astetics.component'
 import Sales from './Sections/Sales.component'
 import FeaturedSection from './Sections/Featured.component'
 import Testimonial from './Sections/Testimonial.component'
+import Footer from './Sections/Footer.component'
 
 import SectionTitle from '../../components/section-title/section-title.component'
 import { BsChevronDoubleRight } from "react-icons/bs";
@@ -24,6 +25,7 @@ const Homepage = () => (
         <Sales/>
         <FeaturedSection/>
         <Testimonial/>
+        <Footer/>
     </HomepageContainer>
 );
 
