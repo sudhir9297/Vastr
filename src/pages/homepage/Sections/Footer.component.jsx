@@ -15,6 +15,7 @@ const Footer = () => (
                 <Text href="/shop">LookBook</Text>
                 <Text href="/shop">Blog</Text>
             </ContentBox1>
+            
             <ContentBox1>
                 <Text href="/shop">Terms & Policies</Text>
                 <Text href="/shop">FAQ</Text>
