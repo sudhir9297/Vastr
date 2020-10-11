@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import CardContentSection from "./Sections/card-content/card-content-seciton.component";
+import CardContentSection from "./Sections/card-content/card-content-section.component";
 import SliderPreview from "./Sections/sliderPreview/sliderPreview.component";
 import Slider from "../../components/slider/slider.component";
 import NewArrival from "./Sections/NewArrival.component";
@@ -19,12 +19,12 @@ const Homepage = () => (
     <Slider />
     <CardContentSection />
     <SliderPreview />
-    {/* <NewArrival /> */}
-    {/* <Astetics /> */}
-    {/* <Sales />
+    <NewArrival />
+    <Astetics />
+    <Sales />
     <FeaturedSection />
-    <Testimonial /> */}
-    {/* <Footer /> */}
+    <Testimonial />
+    <Footer />
   </HomepageContainer>
 );
 

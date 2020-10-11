@@ -21,8 +21,8 @@ const Header = ({ currentUser, hidden, toggleMenuHidden }) => {
   const [MenuHidden, setMenuHidden] = useState(false);
 
   return (
-    <HeaderContainer>
-      <LogoContainer>
+    <HeaderContainer toggle={MenuHidden}>
+      <HeaderArea>
         <Logo to="/">Vastr.</Logo>
         {MenuHidden ? (
           <MenuButtonClose
@@ -39,7 +39,10 @@ const Header = ({ currentUser, hidden, toggleMenuHidden }) => {
             }}
           />
         )}
-      </LogoContainer>
+        <CartIconResp>
+          <CartIcon />
+        </CartIconResp>
+      </HeaderArea>
 
       <OptionContainer toggle={MenuHidden}>
         <LeftOptions>
@@ -63,7 +66,9 @@ const Header = ({ currentUser, hidden, toggleMenuHidden }) => {
               <FaRegUser size="20px" />
             </Options>
           )}
-          <CartIcon />
+          <CartIconCon>
+            <CartIcon />
+          </CartIconCon>
         </RightOptions>
       </OptionContainer>
 
@@ -90,13 +95,15 @@ const HeaderContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   z-index: 10;
+  background-color: transparent;
 
   @media ${device.mobileL} {
     flex-direction: column;
     justify-content: center;
     height: fit-content;
+    padding-bottom: 10px;
     width: 100%;
-    background-color: #a2c232;
+    background-color: ${(props) => (props.toggle ? "#a2c232" : "transparent")};
   }
 `;
 
@@ -106,7 +113,7 @@ const MenuButtonClose = styled(MdClose)`
     position: absolute;
     color: #fff;
     display: block;
-    right: 10px;
+    left: 10px;
   }
 `;
 
@@ -116,16 +123,32 @@ const MenuButtonHam = styled(FiMenu)`
     position: absolute;
     color: #fff;
     display: block;
-    right: 10px;
+    left: 10px;
   }
 `;
 
-const LogoContainer = styled.div`
+const CartIconResp = styled.div`
+  display: none;
+  @media ${device.mobileL} {
+    position: absolute;
+    color: #fff;
+    display: block;
+    right: 0;
+  }
+`;
+
+const CartIconCon = styled.div`
+  @media ${device.mobileL} {
+    display: none;
+  }
+`;
+
+const HeaderArea = styled.div`
   height: 100%;
   background-color: #fff;
 
   @media ${device.mobileL} {
-    background-color: #a2c232;
+    background-color: transparent;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -162,7 +185,6 @@ const OptionContainer = styled.div`
     width: 100%;
     flex-direction: column;
     align-items: center;
-
     display: ${(props) => (props.toggle ? "block" : "none")};
   }
 `;
@@ -190,11 +212,13 @@ const LeftOptions = styled.div`
   align-items: center;
   justify-content: flex-start;
   border-radius: 0 2px 2px 0;
+  background-color: #fff;
 
   @media ${device.mobileL} {
     flex-direction: column;
     width: 100%;
     height: fit-content;
+    background-color: transparent;
   }
 `;
 
@@ -205,12 +229,14 @@ const RightOptions = styled.div`
   align-items: center;
   justify-content: flex-end;
   border-radius: 2px;
+  background-color: #fff;
 
   @media ${device.mobileL} {
     color: #fff;
     flex-direction: column;
     width: 100%;
     height: fit-content;
+    background-color: transparent;
   }
 `;
 

@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 import Carousel, { Dots } from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
-//Lets be Clear here I still dont know how HOOKs works I just followed a guide to build this .... as per other stuff its easy and fun.
+
+import { device } from "../../../constant/MediaSize";
 
 const Testimonial = () => {
   return (
@@ -12,8 +13,7 @@ const Testimonial = () => {
         What Our Customer Says
         <Line />
       </TestimonialTitle>
-      <TestimonialSlider   autoPlay={3000}
-        animationSpeed={1000} infinite dots>
+      <TestimonialSlider autoPlay={3000} animationSpeed={1000} infinite dots>
         <TestimonialData>
           <TestimonialDataContainer>
             <UserImage
@@ -79,16 +79,30 @@ const TestimonialTitle = styled.div`
   font-size: 42px;
   color: #838280;
   margin: 40px auto;
+
+  @media ${device.mobileL} {
+    font-size: 22px;
+    margin: 0 auto;
+  }
 `;
 const Line = styled.div`
   width: 80%;
   height: 3px;
   background-color: #a2c232;
   margin: 20px auto;
+
+  @media ${device.mobileL} {
+    margin: 10px auto;
+    height: 2px;
+  }
 `;
+
 const TestimonialSlider = styled(Carousel)`
   width: 100vw;
   height: 60vh;
+  @media ${device.mobileL} {
+    height: 50vh;
+  }
 `;
 const TestimonialData = styled.div`
   width: 100%;
@@ -97,6 +111,9 @@ const TestimonialData = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  @media ${device.mobileL} {
+    height: 50vh;
+  }
 `;
 
 const TestimonialDataContainer = styled.div`
@@ -105,10 +122,14 @@ const TestimonialDataContainer = styled.div`
   position: relative;
   display: flex;
   border: 1px solid #707070;
-  border-radius:3px;
+  border-radius: 3px;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+
+  @media ${device.mobileL} {
+    width: 80%;
+  }
 `;
 
 const UserImage = styled.img`
@@ -117,19 +138,36 @@ const UserImage = styled.img`
   height: 200px;
   object-fit: cover;
   position: absolute;
-  top: -40%;
+  top: -50%;
   left: 38%;
+
+  @media ${device.mobileL} {
+    top: -30%;
+    left: auto;
+    width: 18vh;
+    height: 18vh;
+  }
 `;
 
 const UserName = styled.div`
-  font-size: 20px;
-  margin:20px 0;
-  color:#24464A;
-  font-weight:600;
+  font-size: 4vw;
+  margin: 20px 0;
+  color: #24464a;
+  font-weight: 600;
+
+  @media ${device.mobileL} {
+    margin: 10px 0;
+  }
 `;
 
 const UserReview = styled.div`
-    margin-bottom:40px;
-    font-size: 16px;
-    width:80%;
+  margin-bottom: 40px;
+  font-size: 16px;
+  width: 80%;
+
+  @media ${device.mobileL} {
+    margin-bottom: 20px;
+    font-size: 12px;
+    width: 90%;
+  }
 `;
