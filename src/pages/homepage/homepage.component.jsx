@@ -1,29 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 
-import CardContentSection from "./Sections/card-content/card-content-section.component";
-import SliderPreview from "./Sections/sliderPreview/sliderPreview.component";
-import Slider from "../../components/slider/slider.component";
-import NewArrival from "./Sections/NewArrival.component";
-import Astetics from "./Sections/Astetics.component";
-import Sales from "./Sections/Sales.component";
-import FeaturedSection from "./Sections/Featured.component";
-import Testimonial from "./Sections/Testimonial.component";
+import NewCollection from "./Sections/NewCollection/NewCollection.component";
+
 import Footer from "./Sections/Footer.component";
 
 import SectionTitle from "../../components/section-title/section-title.component";
 import { BsChevronDoubleRight } from "react-icons/bs";
 
+import { Banner } from "../../components";
+
 const Homepage = () => (
   <HomepageContainer className="homepage">
-    <Slider />
-    <CardContentSection />
-    <SliderPreview />
-    <NewArrival />
-    <Astetics />
-    <Sales />
-    <FeaturedSection />
-    <Testimonial />
+    <Banner />
+    <NewCollection />
     <Footer />
   </HomepageContainer>
 );
@@ -31,6 +21,7 @@ const Homepage = () => (
 export default Homepage;
 
 const HomepageContainer = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

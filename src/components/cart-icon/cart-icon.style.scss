@@ -1,0 +1,32 @@
+.cart__container {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  .cart__icon_container {
+    width: fit-content;
+    position: relative;
+    margin: 0 10px;
+
+    .cart__text {
+      font-size: 14px;
+      margin: 10px;
+    }
+
+    .cart__count {
+      position: absolute;
+      font-size: 10px;
+      top: 6px;
+      right: 3px;
+      width: 15px;
+      height: 15px;
+      display: grid;
+      place-items: center;
+    }
+  }
+}

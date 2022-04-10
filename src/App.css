@@ -4,7 +4,8 @@
 }
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #E5EEEE;
+  background-color: #FFFFFF;
+  color:#161616;
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
 }

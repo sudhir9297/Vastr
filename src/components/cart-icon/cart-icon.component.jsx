@@ -1,49 +1,31 @@
-import React from 'react';
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 import { BsBag } from "react-icons/bs";
 
-import {connect} from 'react-redux';
-import {toggleCartHidden} from '../../redux/cart/cart.action';
-import {selectCartItemsCount} from '../../redux/cart/cart.selector';
-import {createStructuredSelector} from 'reselect';
+import { connect } from "react-redux";
+import { toggleCartHidden } from "../../redux/cart/cart.action";
+import { selectCartItemsCount } from "../../redux/cart/cart.selector";
+import { createStructuredSelector } from "reselect";
 
-const CartIcon=({toggleCartHidden,itemCount})=>(
-    <CartIconContainer  onClick={toggleCartHidden}>
-        <BsBag size="22px"/>
-        <ItemCount>{itemCount}</ItemCount>
-    </CartIconContainer>
+import "./cart-icon.style.scss";
 
-)
+const CartIcon = ({ toggleCartHidden, itemCount }) => (
+  <div className="cart__container" onClick={toggleCartHidden}>
+    <div className="cart__text">Bag</div>
 
-const mapDispatchToProps=dispatch=>({
-    toggleCartHidden:()=>dispatch(toggleCartHidden())
+    <div className="cart__icon_container">
+      <BsBag size="22px" />
+      <div className="cart__count">{itemCount}</div>
+    </div>
+  </div>
+);
+
+const mapDispatchToProps = (dispatch) => ({
+  toggleCartHidden: () => dispatch(toggleCartHidden()),
 });
 
 const mapStateToProps = createStructuredSelector({
-    itemCount: selectCartItemsCount
-  });
-  
-export default connect(mapStateToProps,mapDispatchToProps)(CartIcon);
+  itemCount: selectCartItemsCount,
+});
 
-
-const CartIconContainer=styled.div`
-    width: 45px;
-    height: 44px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    margin-bottom:6px;
-
-    :hover{
-        color:#A2C232;
-    }
-`
-const ItemCount=styled.span`
-    position: absolute;
-      font-size: 10px;
-      font-weight: bold;
-      bottom: 12px;
-`
-
+export default connect(mapStateToProps, mapDispatchToProps)(CartIcon);
