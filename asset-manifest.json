@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vastr/static/css/main.fdcc2fe2.css",
-    "main.js": "/vastr/static/js/main.813cec75.js",
+    "main.js": "/vastr/static/js/main.505cb67f.js",
     "static/media/22.jpg": "/vastr/static/media/22.4bc170078ef73a67a40f.jpg",
     "static/media/2.jpg": "/vastr/static/media/2.4127598128c506f15591.jpg",
     "static/media/4.jpg": "/vastr/static/media/4.dcf411a2b2327cdaee34.jpg",
@@ -19,6 +19,6 @@
   },
   "entrypoints": [
     "static/css/main.fdcc2fe2.css",
-    "static/js/main.813cec75.js"
+    "static/js/main.505cb67f.js"
   ]
 }
