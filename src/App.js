@@ -53,7 +53,7 @@ class App extends React.Component {
       <div className="container">
         <Header />
         <Routes >
-          <Route exact path="/" element={<Homepage/>} />
+          <Route exact path="/vastr" element={<Homepage/>} />
           {/* <Route path="/shop" element={<ShopPage/>} />
           <Route path="/accessories" element={<Accessories/>} />
           <Route exact path="/checkout" element={<CheckoutPage/>} /> */}
