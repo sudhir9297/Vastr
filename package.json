@@ -2,7 +2,7 @@
   "name": "sbrand",
   "version": "1.1.0",
   "private": true,
-  "homepage": "https://sudhir9297.github.io/vastr",
+  "homepage": "https://sudhir9297.github.io/Vastr",
   "dependencies": {
     "axios": "^0.26.1",
     "firebase": "^9.6.10",

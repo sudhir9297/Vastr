@@ -28,7 +28,7 @@ const Header = ({ currentUser, hidden, toggleMenuHidden }) => {
           Blog
         </Link>
       </div>
-      <Link className="logo" to="/vastr">
+      <Link className="logo" to="/">
         Vastr.
       </Link>
       <div className="right_option_container">
