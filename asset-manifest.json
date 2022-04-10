@@ -1,24 +1,21 @@
 {
   "files": {
-    "main.css": "/Vastr/static/css/main.fdcc2fe2.css",
-    "main.js": "/Vastr/static/js/main.907eb75a.js",
-    "static/media/22.jpg": "/Vastr/static/media/22.4bc170078ef73a67a40f.jpg",
-    "static/media/2.jpg": "/Vastr/static/media/2.4127598128c506f15591.jpg",
-    "static/media/4.jpg": "/Vastr/static/media/4.dcf411a2b2327cdaee34.jpg",
-    "static/media/1.jpg": "/Vastr/static/media/1.28183874401345fe74b5.jpg",
-    "static/media/3.jpg": "/Vastr/static/media/3.dd944f82785a08085511.jpg",
-    "static/media/5.jpg": "/Vastr/static/media/5.0806b2233b619087e469.jpg",
-    "static/media/21.jpg": "/Vastr/static/media/21.0ebfebafe1753206d120.jpg",
-    "static/media/13.jpg": "/Vastr/static/media/13.a995d80885f384347fff.jpg",
-    "static/media/19.jpg": "/Vastr/static/media/19.c2e6662bb28344c553c2.jpg",
-    "static/media/17.jpg": "/Vastr/static/media/17.8bf1258582c12797746e.jpg",
-    "static/media/18.jpg": "/Vastr/static/media/18.236d178fa246f625a12b.jpg",
-    "static/media/8.png": "/Vastr/static/media/8.0bee2d60128c6959c457.png",
-    "static/media/7.png": "/Vastr/static/media/7.c70b95c695ea1f2b7904.png",
+    "main.css": "/Vastr/static/css/main.d25ad684.css",
+    "main.js": "/Vastr/static/js/main.c17f101a.js",
+    "static/media/9.webp": "/Vastr/static/media/9.a5eeafebe301cef060d2.webp",
+    "static/media/10.webp": "/Vastr/static/media/10.df4d2c93d72ff3d2d063.webp",
+    "static/media/4.webp": "/Vastr/static/media/4.0edce128488d7f35c833.webp",
+    "static/media/8.webp": "/Vastr/static/media/8.5e9d1f79f4662ad12e3d.webp",
+    "static/media/7.webp": "/Vastr/static/media/7.cf894a5aa1cfc0534711.webp",
+    "static/media/6.webp": "/Vastr/static/media/6.2ad96a599a4ad2474a34.webp",
+    "static/media/3.webp": "/Vastr/static/media/3.dfb65fec92057b08e8c4.webp",
+    "static/media/2.webp": "/Vastr/static/media/2.321563d91582e8f97208.webp",
+    "static/media/5.webp": "/Vastr/static/media/5.63dac6aef60a31eb2cb5.webp",
+    "static/media/1.webp": "/Vastr/static/media/1.85209a2f6178bdae8208.webp",
     "index.html": "/Vastr/index.html"
   },
   "entrypoints": [
-    "static/css/main.fdcc2fe2.css",
-    "static/js/main.907eb75a.js"
+    "static/css/main.d25ad684.css",
+    "static/js/main.c17f101a.js"
   ]
 }
