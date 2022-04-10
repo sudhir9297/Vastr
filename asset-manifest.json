@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Vastr/static/css/main.fdcc2fe2.css",
-    "main.js": "/Vastr/static/js/main.5e20b47a.js",
+    "main.js": "/Vastr/static/js/main.7a5e4a49.js",
     "static/media/22.jpg": "/Vastr/static/media/22.4bc170078ef73a67a40f.jpg",
     "static/media/2.jpg": "/Vastr/static/media/2.4127598128c506f15591.jpg",
     "static/media/4.jpg": "/Vastr/static/media/4.dcf411a2b2327cdaee34.jpg",
@@ -19,6 +19,6 @@
   },
   "entrypoints": [
     "static/css/main.fdcc2fe2.css",
-    "static/js/main.5e20b47a.js"
+    "static/js/main.7a5e4a49.js"
   ]
 }
