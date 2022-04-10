@@ -3,8 +3,6 @@ import styled from "styled-components";
 
 import { device } from "../../constant/MediaSize";
 
-import Carousel, { Dots } from "@brainhubeu/react-carousel";
-import "@brainhubeu/react-carousel/lib/style.css";
 
 const SliderComp = () => {
   const images = [
@@ -21,18 +19,20 @@ const SliderComp = () => {
       src: require("../../assets/images/4.jpg"),
     },
   ];
-  return (
-    <Carousel
-      autoPlay={3000}
-      animationSpeed={1000}
-      plugins={["arrows"]}
-      infinite
-    >
-      {images.map((img) => (
-        <SliderItem key={img.id} src={img.src} />
-      ))}
-    </Carousel>
-  );
+  return (<div>hi</div>)
+
+  // return (
+  //   <Carousel
+  //     autoPlay={3000}
+  //     animationSpeed={1000}
+  //     plugins={["arrows"]}
+  //     infinite
+  //   >
+  //     {images.map((img) => (
+  //       <SliderItem key={img.id} src={img.src} />
+  //     ))}
+  //   </Carousel>
+  // );
 };
 
 export default SliderComp;

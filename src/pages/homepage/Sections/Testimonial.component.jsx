@@ -1,67 +1,69 @@
 import React from "react";
 import styled from "styled-components";
 
-import Carousel, { Dots } from "@brainhubeu/react-carousel";
-import "@brainhubeu/react-carousel/lib/style.css";
+// import Carousel, { Dots } from "@brainhubeu/react-carousel";
+// import "@brainhubeu/react-carousel/lib/style.css";
 
 import { device } from "../../../constant/MediaSize";
 
 const Testimonial = () => {
-  return (
-    <TestimonialContainer>
-      <TestimonialTitle>
-        What Our Customer Says
-        <Line />
-      </TestimonialTitle>
-      <TestimonialSlider autoPlay={3000} animationSpeed={1000} infinite dots>
-        <TestimonialData>
-          <TestimonialDataContainer>
-            <UserImage
-              src={require("../../../assets/images/15.jpg")}
-              alt="Profile image"
-            />
-            <UserName>Anne Peter</UserName>
-            <UserReview>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat"
-            </UserReview>
-          </TestimonialDataContainer>
-        </TestimonialData>
-        <TestimonialData>
-          <TestimonialDataContainer>
-            <UserImage
-              src={require("../../../assets/images/17.jpg")}
-              alt="Profile image"
-            />
-            <UserName>Rose Murphy</UserName>
-            <UserReview>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat"
-            </UserReview>
-          </TestimonialDataContainer>
-        </TestimonialData>
-        <TestimonialData>
-          <TestimonialDataContainer>
-            <UserImage
-              src={require("../../../assets/images/13.jpg")}
-              alt="Profile image"
-            />
-            <UserName>Scarlet dan</UserName>
-            <UserReview>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat"
-            </UserReview>
-          </TestimonialDataContainer>
-        </TestimonialData>
-      </TestimonialSlider>
-    </TestimonialContainer>
-  );
+
+  return (<div>hi</div>)
+  // return (
+  //   <TestimonialContainer>
+  //     <TestimonialTitle>
+  //       What Our Customer Says
+  //       <Line />
+  //     </TestimonialTitle>
+  //     <TestimonialSlider autoPlay={3000} animationSpeed={1000} infinite dots>
+  //       <TestimonialData>
+  //         <TestimonialDataContainer>
+  //           <UserImage
+  //             src={require("../../../assets/images/15.jpg")}
+  //             alt="Profile image"
+  //           />
+  //           <UserName>Anne Peter</UserName>
+  //           <UserReview>
+  //             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+  //             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+  //             enim ad minim veniam, quis nostrud exercitation ullamco laboris
+  //             nisi ut aliquip ex ea commodo consequat"
+  //           </UserReview>
+  //         </TestimonialDataContainer>
+  //       </TestimonialData>
+  //       <TestimonialData>
+  //         <TestimonialDataContainer>
+  //           <UserImage
+  //             src={require("../../../assets/images/17.jpg")}
+  //             alt="Profile image"
+  //           />
+  //           <UserName>Rose Murphy</UserName>
+  //           <UserReview>
+  //             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+  //             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+  //             enim ad minim veniam, quis nostrud exercitation ullamco laboris
+  //             nisi ut aliquip ex ea commodo consequat"
+  //           </UserReview>
+  //         </TestimonialDataContainer>
+  //       </TestimonialData>
+  //       <TestimonialData>
+  //         <TestimonialDataContainer>
+  //           <UserImage
+  //             src={require("../../../assets/images/13.jpg")}
+  //             alt="Profile image"
+  //           />
+  //           <UserName>Scarlet dan</UserName>
+  //           <UserReview>
+  //             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+  //             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+  //             enim ad minim veniam, quis nostrud exercitation ullamco laboris
+  //             nisi ut aliquip ex ea commodo consequat"
+  //           </UserReview>
+  //         </TestimonialDataContainer>
+  //       </TestimonialData>
+  //     </TestimonialSlider>
+  //   </TestimonialContainer>
+  // );
 };
 
 export default Testimonial;
@@ -97,13 +99,13 @@ const Line = styled.div`
   }
 `;
 
-const TestimonialSlider = styled(Carousel)`
-  width: 100vw;
-  height: 60vh;
-  @media ${device.mobileL} {
-    height: 50vh;
-  }
-`;
+// const TestimonialSlider = styled(Carousel)`
+//   width: 100vw;
+//   height: 60vh;
+//   @media ${device.mobileL} {
+//     height: 50vh;
+//   }
+// `;
 const TestimonialData = styled.div`
   width: 100%;
   height: 60vh;

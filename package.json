@@ -1,31 +1,32 @@
 {
   "name": "sbrand",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "private": true,
+  "homepage": "https://sudhir9297.github.io",
   "dependencies": {
-    "@brainhubeu/react-carousel": "^1.18.6",
-    "axios": "^0.20.0",
-    "firebase": "^6.3.5",
-    "node-sass": "^4.14.1",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-gesture-gallery": "^1.1.0",
-    "react-gesture-responder": "^2.1.0",
-    "react-icons": "^3.10.0",
-    "react-redux": "^7.1.0",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "^3.4.3",
-    "redux": "^4.0.4",
+    "axios": "^0.26.1",
+    "firebase": "^9.6.10",
+    "gh-pages": "^3.2.3",
+    "node-sass": "^7.0.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-icons": "^4.3.1",
+    "react-redux": "^7.2.8",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.0",
+    "redux": "^4.1.2",
     "redux-logger": "^3.0.6",
-    "redux-persist": "^5.10.0",
-    "reselect": "^4.0.0",
-    "styled-components": "^5.1.0"
+    "redux-persist": "^6.0.0",
+    "reselect": "^4.1.5",
+    "styled-components": "^5.3.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

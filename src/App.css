@@ -3,17 +3,14 @@
   padding: 0;
 }
 body {
-  font-family: "Montserrat", sans-serif;
-  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+  background-color: #E5EEEE;
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
 }
+
 body::-webkit-scrollbar {
   width: 0 !important;
-}
-a {
-  text-decoration: none;
-  color: black;
 }
 
 .container {

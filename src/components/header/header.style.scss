@@ -1,0 +1,58 @@
+.header_container{
+    height: 60px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo{
+        height: 100%;
+        font-family: 'Major Mono Display', monospace;
+        font-size: 40px;
+        color: #161616;
+        font-weight: 400;
+        margin: 0 45px 0 35px;
+        display: flex;
+        align-items: center;
+    }
+
+    @mixin theme($container: optionContainer) {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border-radius: 0 2px 2px 0;
+    }
+
+    .left_option_container{
+        @include theme($container: optionContainer);
+        justify-content: flex-start;
+    }
+
+    .right_option_container{
+        @include theme($container: optionContainer);
+        justify-content: flex-end;
+    }
+
+
+    .options{
+        padding: 10px 0;
+        margin: 10px 0px;
+        color: #161616;
+        cursor: pointer;
+        font-weight: 400;
+        box-sizing: border-box;
+        width: 100px;
+        text-align: center;
+
+        &:hover {
+            font-weight: 600;
+        }
+        
+    }
+
+    .cart_container{
+
+    }
+
+}
